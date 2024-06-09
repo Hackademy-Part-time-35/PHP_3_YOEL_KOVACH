@@ -54,14 +54,10 @@ class Company{
     }
 
     public static function companyCount(){
+        echo "\nabbiamo creato ".self::$company_count;
         return self::$company_count;
     }
 
-    public function stampCompany(){
-        echo "abbiamo creato ".self::companyCount();
-    }
-
-    
 };
 
 
@@ -84,6 +80,8 @@ $azienda3 -> expensas(5);
 $azienda4 -> expensas(5);
 $azienda5 -> expensas(5);
 
+
+Company::companyCount()
 
 
 
